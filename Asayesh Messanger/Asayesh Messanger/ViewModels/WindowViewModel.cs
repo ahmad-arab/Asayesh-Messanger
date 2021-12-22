@@ -60,6 +60,8 @@ namespace Asayesh_Messanger
         public int TitleHeight { get; set; } = 42;
         public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight+ BorderThickness); } }
 
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+
         #endregion
 
         #region Commands

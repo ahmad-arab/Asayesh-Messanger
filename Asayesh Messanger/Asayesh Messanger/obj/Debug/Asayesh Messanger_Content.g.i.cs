@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/ofl.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/backgrounds/camouflage.png")]
 
 

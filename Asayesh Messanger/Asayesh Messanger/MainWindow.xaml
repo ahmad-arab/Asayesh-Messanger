@@ -9,8 +9,6 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Icon="Images/Logo/Logo.png"
-        MinHeight="{Binding WindowMinHeight}"
-        MinWidth="{Binding WindowMinWidth}"
         Title="Asayesh Messenger" Height="450" Width="800">
 
     <Window.Resources>
@@ -98,7 +96,7 @@
             GlassFrameThickness="0"
             />
     </WindowChrome.WindowChrome>
-    <Grid Background="Red">
-        <Button Content="Hello world"/>
+    <Grid Background="{StaticResource ForegroundLightBrush}">
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
     </Grid>
 </Window>
