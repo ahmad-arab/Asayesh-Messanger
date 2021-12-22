@@ -29,7 +29,7 @@
                                        Margin="0 0 0 30"/>
 
                             <TextBox Tag="Username"/>
-                            <TextBox Tag="Password" Margin="0 5 0 30"/>
+                            <PasswordBox Tag="Password" Margin="0 5 0 30"/>
                             <Button Content="Next" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Border>
