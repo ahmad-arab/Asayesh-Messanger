@@ -18,7 +18,7 @@ namespace Asayesh_Messanger
     /// <summary>
     /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class LoginPage : BasePage
     {
         public LoginPage()
         {

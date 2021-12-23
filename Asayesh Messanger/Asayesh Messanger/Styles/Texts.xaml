@@ -92,21 +92,10 @@
                                    FontSize="18"
                                    Padding="{TemplateBinding Padding}"
                                    VerticalAlignment="Center"
+                                   Visibility="{TemplateBinding local:HasTextProperty.Value, Converter={local:BooleanToVisibilityConverter}}"
                                    HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
                                    Foreground="{StaticResource ForegroundVeryDarkBrush}"
-                                   >
-                            <TextBlock.Style>
-                                <Style TargetType="{x:Type TextBlock}">
-                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding (local:HasTextProperty.Value), RelativeSource={RelativeSource TemplatedParent}}" Value="False">
-                                            <Setter Property="Visibility" Value="Visible"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </TextBlock.Style>
-
-                        </TextBlock>
+                                   />
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="False">
