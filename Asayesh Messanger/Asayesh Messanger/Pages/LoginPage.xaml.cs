@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -18,11 +19,13 @@ namespace Asayesh_Messanger
     /// <summary>
     /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class LoginPage : BasePage
+    public partial class LoginPage : BasePage<LoginViewModel>, IHavePassword
     {
         public LoginPage()
         {
             InitializeComponent();
         }
+
+        public SecureString SecurePassword => PasswordText.SecurePassword;
     }
 }

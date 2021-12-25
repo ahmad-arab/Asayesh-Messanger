@@ -1,7 +1,3 @@
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe.config
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.pdb
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Buttons.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Colors.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Fonts.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Windows.baml
@@ -11,9 +7,13 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger_MarkupCompile.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger_MarkupCompile.lref
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe.config
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.pdb
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\App.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\MainWindow.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\LoginPage.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Buttons.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Texts.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.g.resources
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh_Messanger.Properties.Resources.resources

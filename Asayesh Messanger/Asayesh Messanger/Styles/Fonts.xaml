@@ -11,6 +11,11 @@
     <FontFamily x:Key="LatoThin">pack://application;,,,/Fonts/#Lato Hairline</FontFamily>
     <FontFamily x:Key="LatoThinItalic">pack://application;,,,/Fonts/#Lato HairlineItalic</FontFamily>
 
+    <FontFamily x:Key="FontAwesomeBrands">pack://application;,,,/Fonts/#Font Awesome 6 Brands Regular</FontFamily>
+    <FontFamily x:Key="FontAwesomeRegular">pack://application;,,,/Fonts/#Font Awesome 6 Free Regular</FontFamily>
+    <FontFamily x:Key="FontAwesomeSolid">pack://application;,,,/Fonts/#Font Awesome 6 Free Solid</FontFamily>
+    <FontFamily x:Key="FontAwesomeV4Compatibility">pack://application;,,,/Fonts/#Font Awesome v4 Compatibility Regular</FontFamily>
+
 
     <Style TargetType="Control" x:Key="BaseStyle">
         <Setter Property="FontFamily" Value="{StaticResource LatoThin}"/>

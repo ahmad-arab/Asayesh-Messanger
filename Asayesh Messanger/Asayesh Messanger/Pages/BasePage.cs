@@ -8,13 +8,31 @@ using System.Windows.Media.Animation;
 
 namespace Asayesh_Messanger
 {
-    public class BasePage: Page
+    public class BasePage<VM>: Page
+        where VM: BaseViewModel, new()
     {
+        #region Private members
+        private VM mViewModel { get; set; }
+        #endregion
         #region Public Properies
         public PageAnimation PageLoadAnimation { get; set; } = PageAnimation.SlideAndFadeInFromRight;
         public PageAnimation PageUnloadAnimation { get; set; } = PageAnimation.SlideAndFadeOutToLeft;
 
         public float SlideSeconds { get; set; } = 0.8f;
+
+        public VM ViewModel
+        {
+            get { return mViewModel; }
+            set 
+            {
+                if (mViewModel == value) return;
+
+                mViewModel = value;
+
+                this.DataContext = mViewModel;
+            }
+        }
+
         #endregion
 
         #region Constructor
@@ -23,6 +41,8 @@ namespace Asayesh_Messanger
             if (this.PageLoadAnimation != PageAnimation.None)
                 this.Visibility = Visibility.Collapsed;
             this.Loaded += BasePage_Loaded;
+
+            this.ViewModel = new VM();
         }
         #endregion
         #region Animiation Load/Unload

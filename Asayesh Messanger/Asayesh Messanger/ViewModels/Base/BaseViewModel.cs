@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using PropertyChanged;
 using System.Text;
+using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Asayesh_Messanger
 {
@@ -15,5 +17,24 @@ namespace Asayesh_Messanger
         {
             PropertyChanged(this, new PropertyChangedEventArgs(name));
         }
+
+        #region Command helpers 
+
+        protected async Task RunCommand(Expression<Func<bool>> updatingFlag, Func<Task> action)
+        {
+            if (updatingFlag.GetPropertyValue()) return;
+
+            updatingFlag.SetPropertyValue(true);
+
+            try
+            {
+                await action();
+            }
+            finally
+            {
+                updatingFlag.SetPropertyValue(false);
+            }
+        }
+        #endregion
     }
 }
