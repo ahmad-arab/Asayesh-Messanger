@@ -107,7 +107,7 @@
         <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
 
         <local:SideMenuControl>
-            <Button />
+            <local:ChatListControl/>
         </local:SideMenuControl>
     </Grid>
 </Window>
