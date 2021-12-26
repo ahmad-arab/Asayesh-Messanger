@@ -8,6 +8,8 @@ namespace Asayesh_Messanger
 {
      public enum ApplicationPage
     {
-        Login =0
+        Login =0,
+
+        Chat = 1
     }
 }

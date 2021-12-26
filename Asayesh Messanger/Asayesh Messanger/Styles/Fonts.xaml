@@ -1,5 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
     <FontFamily x:Key="LatoRegular">pack://application;,,,/Fonts/#Lato Regular</FontFamily>
     <FontFamily x:Key="LatoBlack">pack://application;,,,/Fonts/#Lato Black</FontFamily>
     <FontFamily x:Key="LatoBlackItalic">pack://application;,,,/Fonts/#Lato Black Italic</FontFamily>
@@ -30,4 +30,10 @@
     <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}"/>
     <Style TargetType="TextBox" BasedOn="{StaticResource BaseStyle}"/>
     <Style TargetType="ListView" BasedOn="{StaticResource BaseStyle}"/>
+
+
+    <System:String x:Key="FAChatIcon">&#xf086;</System:String>
+    <System:String x:Key="FAUSerIcon">&#xf007;</System:String>
+    <System:String x:Key="FAPictureIcon">&#xf1c5;</System:String>
+    <System:String x:Key="FACogIcon">&#xf013;</System:String>
 </ResourceDictionary>
