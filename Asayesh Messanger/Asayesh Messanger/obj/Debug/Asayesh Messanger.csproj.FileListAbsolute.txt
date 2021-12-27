@@ -1,18 +1,31 @@
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe.config
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.csproj.AssemblyReference.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Colors.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Fonts.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Windows.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListControl.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\MainWindow.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\ChatPage.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\RegisterPage.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\App.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger_MarkupCompile.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger_MarkupCompile.lref
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe.config
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.exe
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Asayesh Messanger.pdb
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\App.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListControl.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListItemControl.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\MainWindow.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\ChatPage.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\LoginPage.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\RegisterPage.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Buttons.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Texts.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.g.resources
@@ -22,12 +35,6 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.csproj.Fody.CopyLocal.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.exe
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.pdb
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.csproj.AssemblyReference.cache
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\ChatPage.g.cs
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Pages\ChatPage.baml
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.g.cs
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.baml
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListItemControl.baml
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListControl.g.cs
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatListControl.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.xml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.csproj.CopyComplete

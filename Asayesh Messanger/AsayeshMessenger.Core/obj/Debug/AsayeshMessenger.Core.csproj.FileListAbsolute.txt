@@ -1,0 +1,9 @@
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\AsayeshMessenger.Core.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\AsayeshMessenger.Core.csproj.CoreCompileInputs.cache
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\AsayeshMessenger.Core.csproj.Fody.CopyLocal.cache
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\AsayeshMessenger.Core.csproj.CopyComplete
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\AsayeshMessenger.Core.pdb

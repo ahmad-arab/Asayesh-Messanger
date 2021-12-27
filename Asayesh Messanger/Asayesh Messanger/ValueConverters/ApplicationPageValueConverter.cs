@@ -1,5 +1,6 @@
 ﻿
 
+using Asayesh_Messanger.Core;
 using System;
 using System.Diagnostics;
 using System.Globalization;
@@ -17,6 +18,9 @@ namespace Asayesh_Messanger
 
                 case ApplicationPage.Chat:
                     return new ChatPage();
+
+                case ApplicationPage.Register:
+                    return new RegisterPage();
 
                 default:
                     Debugger.Break();

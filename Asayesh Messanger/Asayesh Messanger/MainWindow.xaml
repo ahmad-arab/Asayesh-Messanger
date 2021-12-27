@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Asayesh_Messanger"
         mc:Ignorable="d"
         WindowStyle="None"
+        x:Name="appwindow"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Icon="Images/Logo/Logo.png"
@@ -104,7 +105,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/Backgrounds/camouflage.png" Stretch="Fill"/>
         </Grid.Background>
-        <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
+        <Frame Grid.Column="1" 
+               x:Name="MainFrame" 
+               Content="{Binding ApplicationViewModel.CurrentPage, Source={x:Static local:ViewModelLocator.Instance}, Converter={local:ApplicationPageValueConverter}}"/>
 
         <local:SideMenuControl>
             <local:ChatListControl/>

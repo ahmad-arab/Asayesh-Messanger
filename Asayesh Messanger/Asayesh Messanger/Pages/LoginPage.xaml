@@ -1,9 +1,10 @@
-﻿<local:BasePage x:TypeArguments="local:LoginViewModel" x:Class="Asayesh_Messanger.LoginPage"
+﻿<local:BasePage x:TypeArguments="core:LoginViewModel" x:Class="Asayesh_Messanger.LoginPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Asayesh_Messanger"
+      xmlns:core="clr-namespace:Asayesh_Messanger.Core;assembly=AsayeshMessenger.Core"
       x:Name="Page"
       mc:Ignorable="d" 
       
@@ -17,7 +18,7 @@
                             TextBlock.TextAlignment="Center">
                     <Border Background="{StaticResource ForegroundLightBrush}"
                             Width="400"
-                            Margin="50 50 50 50"
+                            Margin="50 50 50 0"
                             Padding="15 50 15 15"
                             CornerRadius="10">
                         <StackPanel>
@@ -35,7 +36,12 @@
                                     HorizontalAlignment="Center"
                                     local:IsBusyProperty.Value="{Binding LoginIsRunning}"/>
                         </StackPanel>
+                        
                     </Border>
+                    <Button Content="Create an account..." 
+                            Command="{Binding RegisterCommand}"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource TextButton}"/>
                 </StackPanel>
             </ScrollViewer>
         </Grid>

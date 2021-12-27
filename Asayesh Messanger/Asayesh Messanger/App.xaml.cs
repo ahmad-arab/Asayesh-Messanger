@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Asayesh_Messanger.Core;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,14 @@ namespace Asayesh_Messanger
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            IoC.Setup();
+
+            Current.MainWindow = new MainWindow();
+            Current.MainWindow.Show();
+        }
     }
 }

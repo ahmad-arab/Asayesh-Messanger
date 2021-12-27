@@ -5,6 +5,7 @@ using System.Windows;
 using System.Threading.Tasks;
 using System;
 using System.Windows.Media.Animation;
+using Asayesh_Messanger.Core;
 
 namespace Asayesh_Messanger
 {

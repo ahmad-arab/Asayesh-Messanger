@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Asayesh_Messanger.Core;
+using System.Windows;
 
 namespace Asayesh_Messanger
 {
@@ -7,6 +8,8 @@ namespace Asayesh_Messanger
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ApplicationViewModel ApplicationViewModel => new ApplicationViewModel();
+
         public MainWindow()
         {
             InitializeComponent();

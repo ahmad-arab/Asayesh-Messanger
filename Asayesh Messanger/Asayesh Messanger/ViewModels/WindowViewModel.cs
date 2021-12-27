@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Asayesh_Messanger.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,7 +61,6 @@ namespace Asayesh_Messanger
         public int TitleHeight { get; set; } = 42;
         public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight+ BorderThickness); } }
 
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Chat;
 
         #endregion
 
