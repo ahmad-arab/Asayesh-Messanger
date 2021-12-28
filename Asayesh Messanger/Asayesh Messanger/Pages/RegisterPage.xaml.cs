@@ -20,7 +20,7 @@ namespace Asayesh_Messanger
     /// <summary>
     /// Interaction logic for Register.xaml
     /// </summary>
-    public partial class RegisterPage : BasePage<LoginViewModel>, IHavePassword
+    public partial class RegisterPage : BasePage<RegisterViewModel>, IHavePassword
     {
         public RegisterPage()
         {

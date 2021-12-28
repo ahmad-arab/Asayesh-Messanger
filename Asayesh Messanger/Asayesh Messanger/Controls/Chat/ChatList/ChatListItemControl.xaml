@@ -6,8 +6,7 @@
              xmlns:local="clr-namespace:Asayesh_Messanger"
              xmlns:core="clr-namespace:Asayesh_Messanger.Core;assembly=AsayeshMessenger.Core"
              mc:Ignorable="d" 
-             Height="60"
-             d:DesignHeight="60" d:DesignWidth="300">
+             d:DesignWidth="300">
 
     <UserControl.Resources>
         <Style x:Key="ContentStyle" TargetType="{x:Type ContentControl}">
@@ -26,16 +25,17 @@
                                     Background="{StaticResource RedBrush}"
                                     Visibility="{Binding NewContentAvailable, Converter={local:BooleanToVisibilityConverter}, ConverterParameter=True}"/>
 
-                            <Border Grid.Column="0" Padding="8">
+                            <Border Grid.Column="0" Padding="8 15">
                                 <Border Background="{Binding ProfilePictureRGB, Converter= {local:StringRGBToBrushConverter}}"
-                    Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
-                    CornerRadius="{Binding ActualHeight, RelativeSource={RelativeSource Self}}">
+                                        Height="40"
+                                        Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
+                                        CornerRadius="{Binding ActualHeight, RelativeSource={RelativeSource Self}}">
                                     <TextBlock Text="{Binding Initials}" 
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"
-                           FontSize="18"
-                           FontFamily="{StaticResource LatoRegular}"
-                           Foreground="{StaticResource ForegroundLightBrush}"/>
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontSize="18"
+                                            FontFamily="{StaticResource LatoRegular}"
+                                            Foreground="{StaticResource ForegroundLightBrush}"/>
 
                                 </Border>
                             </Border>
@@ -43,12 +43,14 @@
                             <Border Grid.Column="1" Padding="0 0 8 0">
                                 <StackPanel VerticalAlignment="Center">
                                     <TextBlock Text="{Binding Name}" Foreground="{StaticResource BlueBrush}"
-                           FontFamily="{StaticResource LatoRegular}"
-                           TextTrimming="CharacterEllipsis"/>
+                                        FontFamily="{StaticResource LatoRegular}"
+                                               Padding="0 0 0 2"
+                                        TextTrimming="CharacterEllipsis"/>
                                     <TextBlock Text="{Binding Message}" 
-                           Foreground="{StaticResource ForegroundDarkBrush}"
-                           FontFamily="{StaticResource LatoRegular}"
-                           TextTrimming="CharacterEllipsis"/>
+                                        Foreground="{StaticResource ForegroundDarkBrush}"
+                                               Padding="0 2 0 0"
+                                        FontFamily="{StaticResource LatoRegular}"
+                                        TextTrimming="CharacterEllipsis"/>
 
                                 </StackPanel>
                             </Border>

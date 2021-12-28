@@ -24,7 +24,7 @@ namespace Asayesh_Messanger.Core
                 new ChatListItemViewModel
                 {
                     Name = "Ahmad Arab",
-                    Message = "Hey Man! You are fucked up",
+                    Message = "Hey Man!",
                     Initials = "AA",
                     ProfilePictureRGB = "2d650a",
                     NewContentAvailable =true
@@ -56,7 +56,7 @@ namespace Asayesh_Messanger.Core
                 new ChatListItemViewModel
                 {
                     Name = "Ahmad Arab",
-                    Message = "Hey Man! You are fucked up",
+                    Message = "Hey Man!",
                     Initials = "AA",
                     ProfilePictureRGB = "2d650a"
                 },

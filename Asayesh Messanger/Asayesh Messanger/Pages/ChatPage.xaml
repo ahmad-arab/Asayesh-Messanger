@@ -10,6 +10,6 @@
       Title="ChatPage">
 
     <Grid>
-        
+        <local:ChatMessageListControl />
     </Grid>
 </local:BasePage>

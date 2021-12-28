@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security;
-using System.Text;
+﻿
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -34,9 +30,11 @@ namespace Asayesh_Messanger.Core
         {
             await RunCommand(() => this.LoginIsRunning, async () =>
               {
-                  await Task.Delay(5000);
+                  await Task.Delay(1000);
                   var username = this.Username;
                   var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
+
+                  IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat);
               });
 
             
@@ -44,7 +42,9 @@ namespace Asayesh_Messanger.Core
         public async Task RegisterAsync(object parameter)
         {
             //((WindowViewModel)(((MainWindow)(System.Windows.Application.Current.MainWindow)).DataContext)).CurrentPage = ApplicationPage.Register;
-            IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register;
+            //IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
+
+            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
             await Task.Delay(1);
         }
         #endregion
