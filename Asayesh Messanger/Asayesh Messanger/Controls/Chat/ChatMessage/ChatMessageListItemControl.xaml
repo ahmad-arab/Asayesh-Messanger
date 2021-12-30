@@ -69,19 +69,18 @@
 
                 <StackPanel x:Name="ExtraDetails" Grid.Row="2" 
                             Opacity="0"
+                            HorizontalAlignment="{Binding SentByMe, Converter={local:SentByMeToAlignmentConverter}, ConverterParameter='True'}"
                             Orientation="Horizontal">
                                      
                     <TextBlock Text="{Binding MessageSentTime, Converter={local:TimeToDisplayTimeConverter}}" 
                            FontSize="12" 
                            Margin="0 0 15 0"
                            Foreground="{StaticResource ForegroundLightBrush}"
-                           HorizontalAlignment="Right"
                            FontFamily="{StaticResource LatoRegular}"/>
 
                     <TextBlock Text="{Binding MessageReadTime, Converter={local:TimeToReadTimeConverter}}" 
                            FontSize="12" 
                            Foreground="{StaticResource RedBrush}"
-                           HorizontalAlignment="Right"
                            FontFamily="{StaticResource LatoRegular}"/>
                 </StackPanel>
                 

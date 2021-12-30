@@ -29,7 +29,7 @@ namespace Asayesh_Messanger.Core
         {
             await RunCommand(() => this.RegisterIsRunning, async () =>
             {
-                await Task.Delay(5000);
+                await Task.Delay(1000);
                 var username = this.Username;
                 var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
             });

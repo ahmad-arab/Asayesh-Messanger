@@ -3,13 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Asayesh_Messanger"
+        xmlns:local="clr-namespace:Asayesh_Messanger" 
+        xmlns:core="clr-namespace:Asayesh_Messanger.Core;assembly=AsayeshMessenger.Core" 
+        d:DataContext="{d:DesignInstance Type=local:WindowViewModel}"
         mc:Ignorable="d"
         WindowStyle="None"
         x:Name="appwindow"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Icon="Images/Logo/Logo.png"
+        MinWidth="{Binding WindowMinimumWidth}"
+        MinHeight="{Binding WindowMinimumHeight}"
         Title="Asayesh Messenger" Height="600" Width="900">
 
     <Window.Resources>
@@ -106,12 +110,11 @@
             <ImageBrush ImageSource="Images/Backgrounds/camouflage.png" TileMode="Tile" />
         </Grid.Background>
         <local:PageHost Grid.Column="1" 
-            d:DataContext=""
-            DataContext="{Binding ApplicationViewModel.CurrentPage, 
-                Source={x:Static local:ViewModelLocator.Instance}, 
-                Converter={local:ApplicationPageValueConverter}}"
-            CurrentPage="{Binding}"/>
-
+                   d:DataContext=""
+                   DataContext="{Binding ApplicationViewModel.CurrentPage, 
+                   Source={x:Static local:ViewModelLocator.Instance},  
+                   Converter={local:ApplicationPageValueConverter}}"
+                   CurrentPage="{Binding}" />
         <local:SideMenuControl Width="300" 
                                local:AnimateSlideInFromLeftProperty.Value=
                                     "{Binding ApplicationViewModel.SideMenuVisible, 

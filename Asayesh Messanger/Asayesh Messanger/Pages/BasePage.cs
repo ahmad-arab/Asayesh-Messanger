@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System;
 using System.Windows.Media.Animation;
 using Asayesh_Messanger.Core;
+using System.ComponentModel;
 
 namespace Asayesh_Messanger
 {
-    public class BasePage:Page
+    public class BasePage:UserControl
     {
         #region Public properties
         public PageAnimation PageLoadAnimation { get; set; } = PageAnimation.SlideAndFadeInFromRight;
@@ -24,6 +25,7 @@ namespace Asayesh_Messanger
         #region Constructor
         public BasePage()
         {
+            if (DesignerProperties.GetIsInDesignMode(this)) return;
             if (this.PageLoadAnimation != PageAnimation.None)
                 this.Visibility = Visibility.Collapsed;
             this.Loaded += BasePage_Loaded;
@@ -35,6 +37,7 @@ namespace Asayesh_Messanger
 
         private async void BasePage_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
+            
             if (ShouldAnimateOut)
                 await AnimateOut();
             else
@@ -48,7 +51,7 @@ namespace Asayesh_Messanger
             switch (this.PageLoadAnimation)
             {
                 case PageAnimation.SlideAndFadeInFromRight:
-                    await this.SlideAndFadeInFromRight(this.SlideSeconds);
+                    await this.SlideAndFadeInFromRight(this.SlideSeconds, width:(int)Application.Current.MainWindow.Width);
                     break;
             }
         }

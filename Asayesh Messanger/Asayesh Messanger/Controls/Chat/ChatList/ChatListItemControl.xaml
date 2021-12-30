@@ -59,12 +59,12 @@
                     
                         <ControlTemplate.Triggers>
                             <DataTrigger Binding="{Binding IsSelected}" Value="True">
-                                <Setter Property="Background" TargetName="Background" Value="{StaticResource LightVeryBlueBrush}"/>
+                                <Setter Property="Background" TargetName="Background" Value="{StaticResource LightVeryVeryBlueBrush}"/>
                             </DataTrigger>
                             <EventTrigger RoutedEvent="MouseEnter">
                                 <BeginStoryboard>
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource LightVeryBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color"/>
+                                        <ColorAnimation To="{StaticResource LightVeryVeryBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color"/>
                                     </Storyboard>
                                 </BeginStoryboard>
                             </EventTrigger>
