@@ -52,7 +52,7 @@
 
             <TextBox Grid.Column="1" Tag="Write a message..."
                      FontSize="14" 
-                     Padding="0 10"
+                     Padding="0 10 12 10"
                      VerticalContentAlignment="Center"
                      VerticalScrollBarVisibility="Auto"
                      BorderThickness="0"

@@ -7,9 +7,9 @@ namespace Asayesh_Messanger.Core
 {
     public class ApplicationViewModel: BaseViewModel
     {
-        public ApplicationPage CurrentPage { get; private set; } = ApplicationPage.Login;
+        public ApplicationPage CurrentPage { get; private set; } = ApplicationPage.Chat;
 
-        public bool SideMenuVisible { get; set; } = false;
+        public bool SideMenuVisible { get; set; } = true;
 
         internal void GoToPage(ApplicationPage page)
         {

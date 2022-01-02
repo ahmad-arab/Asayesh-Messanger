@@ -43,3 +43,4 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.csproj.Fody.CopyLocal.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.exe
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Asayesh Messanger.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Scroll.baml
