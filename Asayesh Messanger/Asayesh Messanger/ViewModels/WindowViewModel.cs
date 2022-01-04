@@ -88,10 +88,10 @@ namespace Asayesh_Messanger
                  OnPropertyChanged(nameof(WindowCornerRadius));
              };
 
-            MinimizeCommand = new RelayCommand((object v) => mWindow.WindowState = WindowState.Minimized);
-            MaximizeCommand = new RelayCommand((object v) => mWindow.WindowState ^= WindowState.Maximized);
-            CloseCommand = new RelayCommand((object v) => mWindow.Close());
-            MenuCommand = new RelayCommand((object v) => SystemCommands.ShowSystemMenu(mWindow,
+            MinimizeCommand = new RelayCommand(() => mWindow.WindowState = WindowState.Minimized);
+            MaximizeCommand = new RelayCommand(() => mWindow.WindowState ^= WindowState.Maximized);
+            CloseCommand = new RelayCommand(() => mWindow.Close());
+            MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow,
                 new Point( Mouse.GetPosition(mWindow).X+mWindow.Left,Mouse.GetPosition(mWindow).Y+mWindow.Top) ));
 
             var resizer = new WindowResizer(mWindow);

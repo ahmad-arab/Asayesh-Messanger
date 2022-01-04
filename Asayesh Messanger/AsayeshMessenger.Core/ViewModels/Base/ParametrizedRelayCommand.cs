@@ -1,16 +1,19 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Asayesh_Messanger.Core
-{
-    public class RelayCommand : ICommand
+{ 
+    class ParametrizedRelayCommand: ICommand
     {
         public event EventHandler CanExecuteChanged = (sender, e) => { };
         //private Action _action;
-        private Action _action;
+        private Action<object> _action;
 
-        public RelayCommand(Action a)
+        public ParametrizedRelayCommand(Action<object> a)
         {
             _action = a;
         }
@@ -22,7 +25,7 @@ namespace Asayesh_Messanger.Core
 
         public void Execute(object parameter)
         {
-            _action();
+            _action(parameter);
         }
     }
 }

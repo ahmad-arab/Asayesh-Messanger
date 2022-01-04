@@ -50,4 +50,15 @@ namespace Asayesh_Messanger
                 await elemnt.SlideAndFadeOutToLeft(FirstLoad ? 0 : 0.3f, KeepMargin: false);
         }
     }
+
+    public class AnimateSlideInFromBottomProperty : AnimateBaseProperty<AnimateSlideInFromBottomProperty>
+    {
+        protected override async void DoAnimation(FrameworkElement elemnt, bool value)
+        {
+            if (value)
+                await elemnt.SlideAndFadeInFromBottom(FirstLoad ? 0 : 0.3f, KeepMargin: false);
+            else
+                await elemnt.SlideAndFadeOutToBottom(FirstLoad ? 0 : 0.3f, KeepMargin: false);
+        }
+    }
 }

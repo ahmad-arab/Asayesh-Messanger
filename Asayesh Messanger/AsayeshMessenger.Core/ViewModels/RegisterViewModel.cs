@@ -18,8 +18,8 @@ namespace Asayesh_Messanger.Core
         #region Constructoer
         public RegisterViewModel()
         {
-            RegisterCommand = new RelayCommand(async (parameter) => await RegisterAsync(parameter));
-            LoginCommand = new RelayCommand(async (v) => await LoginAsync(new object()));
+            RegisterCommand = new ParametrizedRelayCommand(async (parameter) => await RegisterAsync(parameter));
+            LoginCommand = new RelayCommand(async () => await LoginAsync());
         }
 
 
@@ -36,7 +36,7 @@ namespace Asayesh_Messanger.Core
 
 
         }
-        public async Task LoginAsync(object parameter)
+        public async Task LoginAsync()
         {
             //((WindowViewModel)(((MainWindow)(System.Windows.Application.Current.MainWindow)).DataContext)).CurrentPage = ApplicationPage.Register;
             //IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
