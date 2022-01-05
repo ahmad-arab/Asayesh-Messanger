@@ -1,10 +1,10 @@
 ﻿
-using Asayesh_Messanger.Core;
+using AsayeshMessenger.Core;
 using System;
 using System.Globalization;
 using System.Windows;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class HorizontalAlignmentConverter : BaseValueConverter<HorizontalAlignmentConverter>
     {

@@ -5,7 +5,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public interface IHavePassword
     {

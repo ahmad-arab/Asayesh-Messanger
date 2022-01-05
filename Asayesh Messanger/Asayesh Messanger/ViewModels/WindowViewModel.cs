@@ -1,4 +1,4 @@
-﻿using Asayesh_Messanger.Core;
+﻿using AsayeshMessenger.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class WindowViewModel: BaseViewModel
     {

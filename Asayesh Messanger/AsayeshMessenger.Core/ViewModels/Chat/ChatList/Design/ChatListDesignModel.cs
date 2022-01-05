@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class ChatListDesignModel:ChatListViewModel
     {

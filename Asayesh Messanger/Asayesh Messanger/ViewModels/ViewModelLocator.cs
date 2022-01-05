@@ -1,11 +1,11 @@
-﻿using Asayesh_Messanger.Core;
+﻿using AsayeshMessenger.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class ViewModelLocator
     {

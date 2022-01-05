@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class IsFocusedProperty : BaseAttachedProperty<IsFocusedProperty, bool>
     {

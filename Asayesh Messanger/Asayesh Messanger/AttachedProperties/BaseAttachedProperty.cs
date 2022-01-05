@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class BaseAttachedProperty<Parent, Property>
         where Parent: new()

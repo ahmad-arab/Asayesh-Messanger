@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Input;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class ChatListViewModel:BaseViewModel
     {

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class ChatListItemDesignModel: ChatListItemViewModel
     {

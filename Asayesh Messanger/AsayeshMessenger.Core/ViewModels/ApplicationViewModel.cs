@@ -1,9 +1,9 @@
 ﻿
 
-using Asayesh_Messanger.Core;
+using AsayeshMessenger.Core;
 using System;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class ApplicationViewModel: BaseViewModel
     {

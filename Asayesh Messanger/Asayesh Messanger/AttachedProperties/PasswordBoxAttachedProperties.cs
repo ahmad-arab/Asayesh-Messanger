@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class MonitorPasswordProperty: BaseAttachedProperty<MonitorPasswordProperty,bool>
     {

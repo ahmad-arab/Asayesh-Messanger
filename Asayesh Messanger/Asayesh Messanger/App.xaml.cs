@@ -1,4 +1,4 @@
-﻿using Asayesh_Messanger.Core;
+﻿using AsayeshMessenger.Core;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     /// <summary>
     /// Interaction logic for App.xaml

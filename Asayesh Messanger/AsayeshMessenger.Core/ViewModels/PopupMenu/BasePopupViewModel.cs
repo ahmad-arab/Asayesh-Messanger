@@ -1,18 +1,19 @@
 ﻿
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
-    public class BasePopupMenuViewModel: BaseViewModel
+    public class BasePopupViewModel: BaseViewModel
     {
         #region Public Properties
         public string BubbleBackground { get; set; }
 
-
         public ElementHorizontalAlignment ArrowAlignment { get; set; }
+
+        public BaseViewModel Content { get; set; }
         #endregion
 
         #region Constructor
-        public BasePopupMenuViewModel()
+        public BasePopupViewModel()
         {
             BubbleBackground = "ffffff";
 

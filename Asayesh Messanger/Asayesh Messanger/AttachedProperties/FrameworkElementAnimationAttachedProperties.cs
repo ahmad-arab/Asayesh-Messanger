@@ -2,7 +2,7 @@
 using System;
 using System.Windows;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public abstract class AnimateBaseProperty<Parent>: BaseAttachedProperty<Parent, bool>
         where Parent: BaseAttachedProperty<Parent, bool>, new()

@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public static class PageAnimations
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class RegisterViewModel : BaseViewModel
     {

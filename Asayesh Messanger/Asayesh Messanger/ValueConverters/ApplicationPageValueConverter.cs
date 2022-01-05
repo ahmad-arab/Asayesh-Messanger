@@ -1,11 +1,11 @@
 ﻿
 
-using Asayesh_Messanger.Core;
+using AsayeshMessenger.Core;
 using System;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class ApplicationPageValueConverter : BaseValueConverter<ApplicationPageValueConverter>
     {

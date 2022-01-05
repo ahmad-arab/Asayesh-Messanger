@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public static class ExpressionHelpers
     {

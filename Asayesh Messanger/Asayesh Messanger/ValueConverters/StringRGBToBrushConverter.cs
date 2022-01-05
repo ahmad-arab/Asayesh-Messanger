@@ -4,7 +4,7 @@ using System;
 using System.Globalization;
 using System.Windows.Media;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     public class StringRGBToBrushConverter : BaseValueConverter<StringRGBToBrushConverter>
     {

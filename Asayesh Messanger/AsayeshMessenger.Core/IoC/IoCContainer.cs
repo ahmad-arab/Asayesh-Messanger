@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Asayesh_Messanger.Core;
+using AsayeshMessenger.Core;
 using Ninject;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public static class IoC
     {

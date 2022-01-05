@@ -1,7 +1,7 @@
-﻿using Asayesh_Messanger.Core;
+﻿using AsayeshMessenger.Core;
 using System.Windows;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

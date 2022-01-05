@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Input;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public class RelayCommand : ICommand
     {

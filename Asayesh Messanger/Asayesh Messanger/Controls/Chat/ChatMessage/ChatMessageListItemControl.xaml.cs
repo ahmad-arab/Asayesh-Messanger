@@ -1,7 +1,7 @@
 ﻿
 using System.Windows.Controls;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     /// <summary>
     /// Interaction logic for ChatMessageListItemControl.xaml

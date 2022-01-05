@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Security;
 using System.Runtime.InteropServices;
 
-namespace Asayesh_Messanger.Core
+namespace AsayeshMessenger.Core
 {
     public static class SecureStringHelpers
     {

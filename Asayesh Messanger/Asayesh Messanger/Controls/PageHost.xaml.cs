@@ -1,12 +1,12 @@
 ﻿
-using Asayesh_Messanger.Core;
+using AsayeshMessenger.Core;
 using System;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Asayesh_Messanger
+namespace AsayeshMessenger
 {
     /// <summary>
     /// Interaction logic for PageHost.xaml
