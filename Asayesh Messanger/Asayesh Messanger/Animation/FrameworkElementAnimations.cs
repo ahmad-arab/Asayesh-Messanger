@@ -7,7 +7,31 @@ using System.Windows.Media.Animation;
 namespace AsayeshMessenger
 {
     public static class FrameworkElementAnimations
-    {      
+    {
+        #region Fade in/out
+        public static async Task FadeIn(this FrameworkElement element, float seconds = 0.3f)
+        {
+            var sb = new Storyboard();
+            sb.AddFadeIn(seconds);
+            sb.Begin(element);
+            element.Visibility = Visibility.Visible;
+
+            await Task.Delay((int)seconds * 1000);
+        }
+
+        public static async Task FadeOut(this FrameworkElement element, float seconds = 0.3f)
+        {
+            var sb = new Storyboard();
+            sb.AddFadeOut(seconds);
+            sb.Begin(element);
+            element.Visibility = Visibility.Visible;
+
+            await Task.Delay((int)seconds * 1000);
+
+            element.Visibility = Visibility.Collapsed;
+        }
+        #endregion
+
         #region From/To Left
         public static async Task SlideAndFadeInFromLeft(this FrameworkElement element, float seconds=0.3f, bool KeepMargin = true, double width = 0)
         {

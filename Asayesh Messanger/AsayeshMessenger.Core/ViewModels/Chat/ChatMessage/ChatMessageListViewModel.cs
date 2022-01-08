@@ -17,6 +17,7 @@ namespace AsayeshMessenger.Core
         #region Commands
         public ICommand AttachmentButtonCommand { get; set; }
         public ICommand PopupClickawayCommand { get; set; }
+        public ICommand SendCommand { get; set; }
         #endregion
 
         #region Constructor
@@ -24,6 +25,7 @@ namespace AsayeshMessenger.Core
         {
             AttachmentButtonCommand = new RelayCommand(AttachmentButton);
             PopupClickawayCommand = new RelayCommand(PopupClickaway);
+            SendCommand = new RelayCommand(Send);
 
             AttachmentMenu = new ChatAttachmentPopupMenuViewModel();
         }
@@ -38,6 +40,15 @@ namespace AsayeshMessenger.Core
         private void PopupClickaway()
         {
             AttachmentMenuVisibile = false;
+        }
+        private void Send()
+        {
+            IoC.UI.ShowMessage(new MessageBoxDialogViewModel
+            {
+                Title = "Sending a message",
+                Message = "Hi There I'm using Whatsup",
+                OkText = "OK"
+            });
         }
         #endregion
     }

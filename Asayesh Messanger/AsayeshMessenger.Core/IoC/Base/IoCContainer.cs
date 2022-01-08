@@ -12,6 +12,8 @@ namespace AsayeshMessenger.Core
     {
         public static IKernel Kernel { get; private set; } = new StandardKernel();
 
+        public static IUIManager UI => IoC.Get<IUIManager>();
+
         public static T Get<T>()
         {
             return Kernel.Get<T>();

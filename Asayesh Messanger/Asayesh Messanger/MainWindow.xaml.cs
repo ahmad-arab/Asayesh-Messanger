@@ -15,5 +15,16 @@ namespace AsayeshMessenger
             InitializeComponent();
             this.DataContext = new WindowViewModel(this);
         }
+
+        private void appwindow_Activated(object sender, System.EventArgs e)
+        {
+            (DataContext as WindowViewModel).DimmableOverLayVisible = false;
+        }
+
+        private void appwindow_Deactivated(object sender, System.EventArgs e)
+        {
+            (DataContext as WindowViewModel).DimmableOverLayVisible = true;
+
+        }
     }
 }

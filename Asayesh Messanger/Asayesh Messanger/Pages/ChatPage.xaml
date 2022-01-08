@@ -89,6 +89,7 @@
 
                 <Button Content="Send" Padding="8"
                         FontSize="14" 
+                        Command="{Binding SendCommand}"
                         VerticalAlignment="Top"
                         Background="{StaticResource GreenBrush}"/>
             </StackPanel>
