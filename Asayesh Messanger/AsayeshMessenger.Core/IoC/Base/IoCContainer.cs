@@ -14,6 +14,10 @@ namespace AsayeshMessenger.Core
 
         public static IUIManager UI => IoC.Get<IUIManager>();
 
+        public static ApplicationViewModel Application => IoC.Get<ApplicationViewModel>();
+
+        public static SettingsViewModel Settings => IoC.Get<SettingsViewModel>();
+
         public static T Get<T>()
         {
             return Kernel.Get<T>();
@@ -28,6 +32,7 @@ namespace AsayeshMessenger.Core
         private static void BindViewModels()
         {
             Kernel.Bind<ApplicationViewModel>().ToConstant(new ApplicationViewModel());
+            Kernel.Bind<SettingsViewModel>().ToConstant(new SettingsViewModel());
         }
     }
 }

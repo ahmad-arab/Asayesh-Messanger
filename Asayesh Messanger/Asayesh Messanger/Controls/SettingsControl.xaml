@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="AsayeshMessenger.SettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AsayeshMessenger"
+             mc:Ignorable="d" >
+    <Border Margin="-1 -1 -1 -1" Background="{StaticResource ForegroundLightBrush}"
+            Padding="15">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        
+            <!--Title-->
+            <Grid Height="50" Margin="0 0 0 20">
+                <Button Style="{StaticResource IconGrowButton}"
+                        Content="{StaticResource FALeftArrowIcon}"
+                        FontFamily="{StaticResource FontAwesomeSolid}"
+                        Foreground="{StaticResource ForegroundDarkBrush}"
+                        FontSize="18"
+                        Height="50"
+                        Command="{Binding CloseCommand}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"/>
+
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    <Run Text="{StaticResource FACogIcon}"
+                         Foreground="{StaticResource OrangeBrush}"
+                         FontFamily="{StaticResource FontAwesomeSolid}"
+                         FontSize="18"/>
+                    <Run Text="Settings"
+                         FontSize="18"
+                         FontFamily="{StaticResource LatoRegular}"/>
+                </TextBlock>
+            </Grid>
+            
+            <!--Main Content-->
+            <Grid Grid.Row="1"
+                  Width="600"
+                  VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Margin="0 0 30 0"
+                      Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Border CornerRadius="8" 
+                            x:Name="Mask"
+                            Background="White"/>
+
+                    <Grid>
+                        <Grid.OpacityMask>
+                            <VisualBrush Visual="{Binding ElementName=Mask}"/>
+                        </Grid.OpacityMask>
+                        <Image Source="/Images/Samples/123.jpg" Stretch="UniformToFill"/>
+                    </Grid>
+                </Grid>
+                
+
+                <!--Profile Details-->
+                <StackPanel Grid.Column="1">
+                    <local:TextEntyConrol />
+                    <local:TextEntyConrol />
+                    <local:TextEntyConrol />
+                    <local:TextEntyConrol />
+
+                </StackPanel>
+            </Grid>
+    </Grid>
+    </Border>
+</UserControl>

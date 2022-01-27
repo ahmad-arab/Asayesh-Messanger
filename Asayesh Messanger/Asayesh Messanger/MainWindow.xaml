@@ -113,6 +113,14 @@
                 <ImageBrush ImageSource="Images/Backgrounds/camouflage.png" TileMode="Tile" />
             </Grid.Background>
 
+            <!--Settings Control-->
+            <local:SettingsControl Grid.ColumnSpan="2"
+                                   Panel.ZIndex="9"
+                                   local:AnimateSlideInFromBottomMarginProperty.Value="{Binding ApplicationViewModel.SettingsMenuVisible, 
+                                                                                          Source={x:Static local:ViewModelLocator.Instance}}"/>
+
+
+            <!--Dimmable Overlay-->
             <Border Grid.ColumnSpan="2"
                     Panel.ZIndex="10"
                     Opacity="0.3"

@@ -15,8 +15,10 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Input\TextEntyConrol.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Menu\VerticalMenu.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\PageHost.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SettingsControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Dialogs\DialogMessageBox.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\DialogWindow.g.cs
@@ -34,8 +36,10 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Input\TextEntyConrol.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Menu\VerticalMenu.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\PageHost.baml
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SettingsControl.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\SideMenuControl.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Dialogs\DialogMessageBox.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\DialogWindow.baml

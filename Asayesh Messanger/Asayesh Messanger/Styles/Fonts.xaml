@@ -39,7 +39,13 @@
 
     <System:String x:Key="FASearchIcon">&#xf002;</System:String>
     <System:String x:Key="FAEllipsisVerticalIcon">&#xf142;</System:String>
+    <System:String x:Key="FAEllipsisIcon">&#xf141;</System:String>
     
     <System:String x:Key="FAPaperClipIcon">&#xf0c6;</System:String>
     <System:String x:Key="FASmileIcon">&#xf118;</System:String>
+
+    <System:String x:Key="FALeftArrowIcon">&#xf060;</System:String>
+
+    <System:String x:Key="FATickIcon">&#xf00c;</System:String>
+    <System:String x:Key="FACloseIcon">&#xf00d;</System:String>
 </ResourceDictionary>

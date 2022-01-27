@@ -49,6 +49,8 @@ namespace AsayeshMessenger.Core
                 Message = "Hi There I'm using Whatsup",
                 OkText = "OK"
             });
+
+            
         }
         #endregion
     }

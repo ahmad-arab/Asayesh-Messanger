@@ -11,6 +11,8 @@ namespace AsayeshMessenger.Core
 
         public bool SideMenuVisible { get; set; } = true;
 
+        public bool SettingsMenuVisible { get; set; } = false;
+
         internal void GoToPage(ApplicationPage page)
         {
             CurrentPage = page;
