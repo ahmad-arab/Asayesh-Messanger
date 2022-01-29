@@ -4,7 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AsayeshMessenger"
-             mc:Ignorable="d" >
+             xmlns:core="clr-namespace:AsayeshMessenger.Core;assembly=AsayeshMessenger.Core"
+             mc:Ignorable="d"
+             d:DataContext="{x:Static core:SettingsDesignModel.Instance}">
     <Border Margin="-1 -1 -1 -1" Background="{StaticResource ForegroundLightBrush}"
             Padding="15">
         <Grid >
@@ -62,11 +64,12 @@
                 
 
                 <!--Profile Details-->
-                <StackPanel Grid.Column="1">
-                    <local:TextEntyConrol />
-                    <local:TextEntyConrol />
-                    <local:TextEntyConrol />
-                    <local:TextEntyConrol />
+                <StackPanel Grid.Column="1"
+                            local:TextEntryWidthMatcherProperty.Value="True">
+                    <local:TextEntryControl  DataContext="{Binding Name}"/>
+                    <local:TextEntryControl DataContext="{Binding Username}" />
+                    <local:TextEntryControl DataContext="{Binding Password}"/>
+                    <local:TextEntryControl DataContext="{Binding Email}"/>
 
                 </StackPanel>
             </Grid>

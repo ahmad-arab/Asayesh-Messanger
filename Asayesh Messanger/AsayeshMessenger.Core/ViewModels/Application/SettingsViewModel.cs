@@ -33,6 +33,12 @@ namespace AsayeshMessenger.Core
         {
             CloseCommand = new RelayCommand(Close);
             OpenCommand = new RelayCommand(Open);
+
+            //TODO: Remove this shit
+            Name = new TextEntryViewModel { Label = "Name", OriginalText = "Ahmad Arab" };
+            Username = new TextEntryViewModel { Label = "Username", OriginalText = "Ahmad" };
+            Password = new TextEntryViewModel { Label = "Password", OriginalText = "*******" };
+            Email = new TextEntryViewModel { Label = "Email", OriginalText = "ahmadarab45521@gmail.com" };
         }
 
         #endregion
