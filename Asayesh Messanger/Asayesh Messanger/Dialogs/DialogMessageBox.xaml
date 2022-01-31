@@ -17,6 +17,8 @@
 
         <Button Content="{Binding OkText}" 
                 HorizontalAlignment="Center"
+                IsDefault="True"
+                IsCancel="True"
                 Command="{Binding CloseCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:BaseDialogUserControl}}}"/>
     </StackPanel>
 </local:BaseDialogUserControl>

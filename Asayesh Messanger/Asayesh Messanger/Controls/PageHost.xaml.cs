@@ -13,16 +13,27 @@ namespace AsayeshMessenger
     /// </summary>
     public partial class PageHost : UserControl
     {
-        public BasePage CurrentPage
+        public ApplicationPage CurrentPage
         {
-            get { return (BasePage)GetValue(CurrentPageProperty); }
+            get { return (ApplicationPage)GetValue(CurrentPageProperty); }
             set { SetValue(CurrentPageProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for CurrentPage.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CurrentPageProperty =
-            DependencyProperty.Register(nameof(CurrentPage), typeof(BasePage), 
-                typeof(PageHost), new UIPropertyMetadata(CurrentPagePropertChanged));
+            DependencyProperty.Register(nameof(CurrentPage), typeof(ApplicationPage), 
+                typeof(PageHost), new UIPropertyMetadata(default(ApplicationPage), null,CurrentPagePropertChanged));
+
+        public BaseViewModel CurrentPageViewModel
+        {
+            get { return (BaseViewModel)GetValue(CurrentPageViewModelProperty); }
+            set { SetValue(CurrentPageViewModelProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CurrentPage.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CurrentPageViewModelProperty =
+            DependencyProperty.Register(nameof(CurrentPageViewModel), typeof(BaseViewModel),
+                typeof(PageHost), new UIPropertyMetadata());
 
         #region Constructor
 
@@ -31,17 +42,29 @@ namespace AsayeshMessenger
             InitializeComponent();
 
             if (DesignerProperties.GetIsInDesignMode(this))
-                NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage);
+                NewPage.Content = IoC.Application.CurrentPage.ToBasePage();
         }
 
         #endregion
 
         #region Property Changed Events
-        private static void CurrentPagePropertChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static object CurrentPagePropertChanged(DependencyObject d, object e)
         {
+            var currentPage = (ApplicationPage)d.GetValue(CurrentPageProperty);
+            var currentPageViewModel = d.GetValue(CurrentPageViewModelProperty);
+
             var newPageFrame = (d as PageHost).NewPage;
             var oldPageFrame = (d as PageHost).OldPage;
 
+            if (newPageFrame.Content is BasePage page &&
+                page.ToApplicationPage() == currentPage)
+            {
+                page.ViewModelObject = currentPageViewModel;
+
+                return e;
+            }
+
+            
             // Store the current page content as the old page
             var oldPageContent = newPageFrame.Content;
 
@@ -67,7 +90,9 @@ namespace AsayeshMessenger
             }
 
             // Set the new page content
-            newPageFrame.Content = e.NewValue;
+            newPageFrame.Content = currentPage.ToBasePage(currentPageViewModel);
+
+            return e;
         }
         #endregion
     }

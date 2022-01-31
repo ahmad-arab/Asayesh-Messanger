@@ -11,8 +11,9 @@ namespace AsayeshMessenger.Core
         {
             Name = new TextEntryViewModel { Label = "Name", OriginalText = "Ahmad Arab" };
             Username = new TextEntryViewModel { Label = "Username", OriginalText = "Ahmad" };
-            Password = new TextEntryViewModel { Label = "Password", OriginalText = "*******" };
+            Password = new PasswordEntryViewModel { Label = "Password", FakePassword = "Fake" };
             Email = new TextEntryViewModel { Label = "Email", OriginalText = "ahmadarab45521@gmail.com" };
+            LogoutButtonText = "Logout";
         }
         #endregion
     }

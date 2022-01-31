@@ -15,6 +15,14 @@ namespace AsayeshMessenger
     /// </summary>
     public class BasePage : UserControl
     {
+        #region Private Member
+
+        /// <summary>
+        /// The View Model associated with this page
+        /// </summary>
+        private object mViewModel;
+
+        #endregion
         #region Public Properties
 
         /// <summary>
@@ -37,6 +45,35 @@ namespace AsayeshMessenger
         /// Useful for when we are moving the page to another frame
         /// </summary>
         public bool ShouldAnimateOut { get; set; }
+
+        /// <summary>
+        /// The View Model associated with this page
+        /// </summary>
+        public object ViewModelObject
+        {
+            get => mViewModel;
+            set
+            {
+                // If nothing has changed, return
+                if (mViewModel == value)
+                    return;
+
+                // Update the value
+                mViewModel = value;
+
+                //Fire OnViewModelChanged method
+                OnViewModelChanged();
+
+                // Set the data context for this page
+                DataContext = mViewModel;
+            }
+        }
+
+
+        protected virtual void OnViewModelChanged()
+        {
+
+        }
 
         #endregion
 
@@ -116,7 +153,7 @@ namespace AsayeshMessenger
                 case PageAnimation.SlideAndFadeOutToLeft:
 
                     // Start the animation
-                    await this.SlideAndFadeOutAsync(AnimationSlideInDirection.Right, SlideSeconds);
+                    await this.SlideAndFadeOutAsync(AnimationSlideInDirection.Left, SlideSeconds);
 
                     break;
             }
@@ -131,48 +168,35 @@ namespace AsayeshMessenger
     public class BasePage<VM> : BasePage
         where VM : BaseViewModel, new()
     {
-        #region Private Member
-
-        /// <summary>
-        /// The View Model associated with this page
-        /// </summary>
-        private VM mViewModel;
-
-        #endregion
+        
 
         #region Public Properties
-
-        /// <summary>
-        /// The View Model associated with this page
-        /// </summary>
         public VM ViewModel
         {
-            get => mViewModel;
-            set
-            {
-                // If nothing has changed, return
-                if (mViewModel == value)
-                    return;
-
-                // Update the value
-                mViewModel = value;
-
-                // Set the data context for this page
-                DataContext = mViewModel;
-            }
+            get => (VM)ViewModelObject;
+            set => ViewModelObject = value;
         }
-
         #endregion
 
         #region Constructor
-
         /// <summary>
         /// Default constructor
         /// </summary>
         public BasePage() : base()
         {
+            ViewModel = IoC.Get<VM>();
+        }
+
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        public BasePage(VM specificViewModel = null) : base()
+        {
+            if (specificViewModel != null)
+                ViewModel = specificViewModel;
             // Create a default view model
-            ViewModel = new VM();
+            else
+                ViewModel = IoC.Get<VM>();
         }
 
         #endregion

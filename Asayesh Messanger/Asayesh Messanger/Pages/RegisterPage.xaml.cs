@@ -26,6 +26,10 @@ namespace AsayeshMessenger
         {
             InitializeComponent();
         }
+        public RegisterPage(RegisterViewModel specificViewModel) : base(specificViewModel)
+        {
+            InitializeComponent();
+        }
 
         public SecureString SecurePassword => PasswordText.SecurePassword;
     }

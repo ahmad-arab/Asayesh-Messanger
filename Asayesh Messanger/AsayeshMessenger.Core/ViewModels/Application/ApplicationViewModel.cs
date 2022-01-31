@@ -9,13 +9,21 @@ namespace AsayeshMessenger.Core
     {
         public ApplicationPage CurrentPage { get; private set; } = ApplicationPage.Chat;
 
+        public BaseViewModel CurrentPageViewModel { get; set; }
+
         public bool SideMenuVisible { get; set; } = true;
 
         public bool SettingsMenuVisible { get; set; } = false;
 
-        internal void GoToPage(ApplicationPage page)
+        public void GoToPage(ApplicationPage page, BaseViewModel viewModel = null)
         {
+            SettingsMenuVisible = false;
+
+            CurrentPageViewModel = viewModel;
+
             CurrentPage = page;
+
+            OnPropertyChanged(nameof(CurrentPage));
 
             SideMenuVisible = page == ApplicationPage.Chat;
         }

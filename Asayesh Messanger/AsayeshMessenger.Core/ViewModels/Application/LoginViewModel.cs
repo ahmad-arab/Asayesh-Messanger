@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -31,6 +32,12 @@ namespace AsayeshMessenger.Core
             await RunCommand(() => this.LoginIsRunning, async () =>
               {
                   await Task.Delay(1000);
+
+                  IoC.Settings.Name = new TextEntryViewModel { Label = "Name", OriginalText = $"Ahmad Arab{DateTime.Now.ToLocalTime()}" };
+                  IoC.Settings.Username = new TextEntryViewModel { Label = "Username", OriginalText = "Ahmad" };
+                  IoC.Settings.Password = new PasswordEntryViewModel { Label = "Password", FakePassword = "*******" };
+                  IoC.Settings.Email = new TextEntryViewModel { Label = "Email", OriginalText = "ahmadarab45521@gmail.com" };
+
                   var username = this.Username;
                   var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
 
