@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace AsayeshMessenger.Core
@@ -6,12 +8,14 @@ namespace AsayeshMessenger.Core
     public class ChatMessageListViewModel : BaseViewModel
     {
         #region Public Properties
-        public List<ChatMessageListItemViewModel> Items { get; set; }
+        public ObservableCollection<ChatMessageListItemViewModel> Items { get; set; }
 
         public bool AttachmentMenuVisibile { get; set; } = false;
         public bool AnyPopupVisibil => AttachmentMenuVisibile;
 
         public ChatAttachmentPopupMenuViewModel AttachmentMenu { get; set; }
+
+        public string PendingMessageText { get; set; }
         #endregion
 
         #region Commands
@@ -41,16 +45,22 @@ namespace AsayeshMessenger.Core
         {
             AttachmentMenuVisibile = false;
         }
-        private void Send()
+        public void Send()
         {
-            IoC.UI.ShowMessage(new MessageBoxDialogViewModel
+            if (Items == null)
+                Items = new ObservableCollection<ChatMessageListItemViewModel>();
+
+            Items.Add(new ChatMessageListItemViewModel
             {
-                Title = "Sending a message",
-                Message = "Hi There I'm using Whatsup",
-                OkText = "OK"
+                Initials = "AA",
+                 Message = PendingMessageText,
+                  SenderName ="Ahmad Arab",
+                   MessageSentTime = DateTime.Now,
+                   SentByMe = true,
+                    NewItem = true
             });
 
-            
+            PendingMessageText = string.Empty;
         }
         #endregion
     }

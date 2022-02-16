@@ -63,6 +63,9 @@ namespace AsayeshMessenger
 
                     DataContext = viewModel;
 
+                    mDialogWindow.Owner = Application.Current.MainWindow;
+                    mDialogWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
                     mDialogWindow.ShowDialog();
                 }
                 finally

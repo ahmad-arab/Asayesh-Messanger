@@ -43,7 +43,31 @@ namespace AsayeshMessenger
             var storyBoard = new Storyboard();
             storyBoard.AddFadeIn(1);
             storyBoard.Begin(ChatMessageList);
+
+            MessageText.Focus();
         }
         #endregion
+
+        private void MessageText_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            var textbox = sender as TextBox;
+
+            if(e.Key == Key.Enter)
+            {
+                if (Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
+                {
+                    var index = textbox.CaretIndex;
+
+                    textbox.Text = textbox.Text.Insert(index, Environment.NewLine);
+
+                    textbox.CaretIndex = index + Environment.NewLine.Length;
+                }
+                else
+                    ViewModel.Send();
+                
+            
+                e.Handled = true;
+            }
+        }
     }
 }

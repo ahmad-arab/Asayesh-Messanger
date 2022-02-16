@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace AsayeshMessenger.Core
 {
@@ -13,7 +14,7 @@ namespace AsayeshMessenger.Core
         #region Constructor
         public ChatMessageListDesignModel()
         {
-            Items = new List<ChatMessageListItemViewModel>
+            Items = new ObservableCollection<ChatMessageListItemViewModel>
             {
                 new ChatMessageListItemViewModel
                 {

@@ -10,7 +10,14 @@ namespace AsayeshMessenger
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (SolidColorBrush)(new BrushConverter().ConvertFrom($"#{value}"));
+            try
+            {
+                return (SolidColorBrush)(new BrushConverter().ConvertFrom($"#{value}"));
+            }
+            catch
+            {
+                return (SolidColorBrush)(new BrushConverter().ConvertFrom($"#FFFFFF"));
+            }
         }
 
         public override object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

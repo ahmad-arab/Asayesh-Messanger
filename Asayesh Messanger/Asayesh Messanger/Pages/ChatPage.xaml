@@ -72,14 +72,18 @@
                     Foreground="{StaticResource ForegroundDarkBrush}"
                     Command="{Binding AttachmentButtonCommand}"/>
 
-            <TextBox Grid.Column="1" Tag="Write a message..."
+            <TextBox x:Name="MessageText"
+                     Grid.Column="1" Tag="Write a message..."
                      FontSize="14" 
+                     local:IsFocusedProperty.Value ="True"
+                     Text="{Binding PendingMessageText, UpdateSourceTrigger=PropertyChanged}"
                      Padding="0 10 12 10"
                      VerticalContentAlignment="Center"
                      VerticalScrollBarVisibility="Auto"
                      BorderThickness="0"
+                     AcceptsTab="True"
                      AcceptsReturn="True"
-                     AcceptsTab="True"/>
+                     PreviewKeyDown="MessageText_PreviewKeyDown"/>
             <StackPanel Grid.Column="2"
                         Margin="0 0 8 0"
                         Orientation="Horizontal">
@@ -92,6 +96,8 @@
 
                 <Button Content="Send" Padding="8"
                         FontSize="14" 
+                        IsDefault="True"
+                        Focusable="False"
                         Command="{Binding SendCommand}"
                         VerticalAlignment="Top"
                         Background="{StaticResource GreenBrush}"/>

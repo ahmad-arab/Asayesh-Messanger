@@ -17,5 +17,13 @@ namespace AsayeshMessenger.Core
         public DateTimeOffset MessageSentTime { get; set; }
 
         public bool MessageRead => MessageReadTime > DateTimeOffset.MinValue;
+
+        public bool NewItem { get; set; }
+
+        public ChatMessageListItemImageAttachmentViewModel ImageAttachment { get; set; }
+
+        public bool HasMessage => Message != null;
+
+        public bool HasImageAttachment => ImageAttachment != null;
     }
 }

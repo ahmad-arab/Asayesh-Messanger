@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace AsayeshMessenger.Core
@@ -32,7 +33,7 @@ namespace AsayeshMessenger.Core
         {
             IoC.Application.GoToPage(ApplicationPage.Chat, new ChatMessageListViewModel 
             { 
-                 Items= new List<ChatMessageListItemViewModel>
+                 Items= new ObservableCollection<ChatMessageListItemViewModel>
                  {
                       new ChatMessageListItemViewModel
                       {
@@ -160,6 +161,10 @@ namespace AsayeshMessenger.Core
                            Initials = Initials,
                             IsSelected = false,
                              Message = Message+ new Random().Next(0,100000000).ToString(),
+                             ImageAttachment = new ChatMessageListItemImageAttachmentViewModel
+                             {
+                                 ThumbnailUrl="http://anyware"
+                             },
                               MessageReadTime = DateTime.Now,
                                MessageSentTime = DateTime.Now.AddMinutes(-10),
                                 ProfilePictureRGB = ProfilePictureRGB,
