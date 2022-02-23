@@ -1,3 +1,10 @@
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.exe.config
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.exe
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.xml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\AsayeshMessenger.csproj.AssemblyReference.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Colors.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Styles\Fonts.baml
@@ -6,6 +13,7 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\BubbleContent.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatList\ChatListControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.g.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Input\PasswordEntryControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Input\TextEntryControl.g.cs
@@ -23,14 +31,6 @@ C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messange
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\AsayeshMessenger_MarkupCompile.cache
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\AsayeshMessenger_MarkupCompile.lref
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.exe.config
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.exe
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.pdb
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.dll
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.dll
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\AsayeshMessenger.Core.pdb
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\bin\Debug\Ninject.xml
-C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\App.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\BubbleContent.baml
 C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\Asayesh Messanger\obj\Debug\Controls\Chat\ChatList\ChatListControl.baml

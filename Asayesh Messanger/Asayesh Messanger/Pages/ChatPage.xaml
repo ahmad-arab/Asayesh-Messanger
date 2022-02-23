@@ -30,17 +30,48 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Ahmad Arab"
-                       Grid.ColumnSpan="2"
+            <TextBlock Text="{Binding DisplayTitle}"
+                       Grid.ColumnSpan="1"
                        FontFamily="{StaticResource LatoRegular}"
                        FontSize="24" Foreground="{StaticResource ForegroundLightBrush}"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"/>
 
             <StackPanel Orientation="Horizontal" Grid.Column="1">
-                <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FASearchIcon}" />
+                <!--Search Button-->
+                <Button Style="{StaticResource IconGrowButton}" 
+                        Content="{StaticResource FASearchIcon}"
+                        Command="{Binding OpenSearchCommand}"/>
                 <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FAEllipsisVerticalIcon}"/>
             </StackPanel>
+            
+            <!--search Textbox-->
+            <Grid Grid.ColumnSpan="2"
+                  local:AnimateSlideInFromRightMarginProperty.Value="{Binding SearchIsOpen}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Close Search Button-->
+                <Button Style="{StaticResource IconGrowButton}" 
+                        Content="{StaticResource FACloseIcon}"
+                        Command="{Binding CloseSearchCommand}"
+                        Foreground="{StaticResource OrangeBrush}"/>
+                
+                <TextBox
+                     Grid.Column="2" 
+                     Margin="0 5 5 5"
+                     Tag="Search text..."
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                     local:FocusProperty.Value="{Binding SearchIsOpen}"
+                     FontSize="14">
+                    <TextBox.InputBindings>
+                        <KeyBinding Command="{Binding CleareSearchCommand}" Key="Esc"/>
+                        <KeyBinding Command="{Binding SearchCommand}" Key="Return"/>
+                    </TextBox.InputBindings>
+                </TextBox>
+            </Grid>
         </Grid>
         
         <local:ChatMessageListControl x:Name="ChatMessageList" Grid.Row="1" DataContext="{Binding}"/>
@@ -83,7 +114,7 @@
                      BorderThickness="0"
                      AcceptsTab="True"
                      AcceptsReturn="True"
-                     PreviewKeyDown="MessageText_PreviewKeyDown"/>
+                     PreviewKeyDown="MessageText_PreviewKeyDown" TextChanged="MessageText_TextChanged"/>
             <StackPanel Grid.Column="2"
                         Margin="0 0 8 0"
                         Orientation="Horizontal">

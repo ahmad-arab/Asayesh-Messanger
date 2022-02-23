@@ -69,5 +69,10 @@ namespace AsayeshMessenger
                 e.Handled = true;
             }
         }
+
+        private void MessageText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

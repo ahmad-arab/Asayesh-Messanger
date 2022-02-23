@@ -31,9 +31,11 @@ namespace AsayeshMessenger.Core
         #region Command methods
         public void OpenMessage()
         {
-            IoC.Application.GoToPage(ApplicationPage.Chat, new ChatMessageListViewModel 
-            { 
-                 Items= new ObservableCollection<ChatMessageListItemViewModel>
+            //TODO:get messages from server
+            IoC.Application.GoToPage(ApplicationPage.Chat, new ChatMessageListViewModel
+            {
+                DisplayTitle = "Ahmad Arab, Le moi",
+                 Items = new ObservableCollection<ChatMessageListItemViewModel>
                  {
                       new ChatMessageListItemViewModel
                       {
@@ -172,7 +174,7 @@ namespace AsayeshMessenger.Core
                                   SentByMe =true
                       },
                  }
-            });
+            }) ;
         }
         #endregion
     }

@@ -14,6 +14,7 @@ namespace AsayeshMessenger.Core
         #region Constructor
         public ChatMessageListDesignModel()
         {
+            DisplayTitle = "Ahmad Arab, Design Model";
             Items = new ObservableCollection<ChatMessageListItemViewModel>
             {
                 new ChatMessageListItemViewModel
