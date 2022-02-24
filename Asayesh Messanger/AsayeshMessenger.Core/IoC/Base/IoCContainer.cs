@@ -14,6 +14,8 @@ namespace AsayeshMessenger.Core
 
         public static IUIManager UI => IoC.Get<IUIManager>();
 
+        public static ILogFactory Logger => IoC.Get<ILogFactory>();
+
         public static ApplicationViewModel Application => IoC.Get<ApplicationViewModel>();
 
         public static SettingsViewModel Settings => IoC.Get<SettingsViewModel>();

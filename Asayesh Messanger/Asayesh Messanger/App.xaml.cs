@@ -19,6 +19,15 @@ namespace AsayeshMessenger
             base.OnStartup(e);
             ApplicationSetup();
 
+            IoC.Logger.Log("This is Debug", LogLevel.Debug);
+            IoC.Logger.Log("This is Verbose", LogLevel.Verbose);
+            IoC.Logger.Log("This is Informative", LogLevel.Informative);
+            IoC.Logger.Log("This is Warning", LogLevel.Warning);
+            IoC.Logger.Log("This is Error", LogLevel.Error);
+            IoC.Logger.Log("This is Success", LogLevel.Success);
+
+
+
             Current.MainWindow = new MainWindow();
             Current.MainWindow.Show();
         }
@@ -27,7 +36,11 @@ namespace AsayeshMessenger
         {
             IoC.Setup();
 
+            //Bind a UI Manager
             IoC.Kernel.Bind<IUIManager>().ToConstant(new UIManager());
+
+            //Bind a Logger
+            IoC.Kernel.Bind<ILogFactory>().ToConstant(new BaseLogFactory());
         }
     }
 }

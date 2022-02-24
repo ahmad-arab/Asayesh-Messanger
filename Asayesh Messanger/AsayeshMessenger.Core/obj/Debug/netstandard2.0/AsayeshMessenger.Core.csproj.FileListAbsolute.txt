@@ -1,0 +1,11 @@
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\netstandard2.0\AsayeshMessenger.Core.deps.json
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\netstandard2.0\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\bin\Debug\netstandard2.0\AsayeshMessenger.Core.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.AssemblyInfoInputs.cache
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.AssemblyInfo.cs
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.csproj.CoreCompileInputs.cache
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.csproj.Fody.CopyLocal.cache
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.dll
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.pdb
+C:\Users\gcgzz\source\repos\Asayesh-Messanger\Asayesh Messanger\AsayeshMessenger.Core\obj\Debug\netstandard2.0\AsayeshMessenger.Core.csproj.AssemblyReference.cache
