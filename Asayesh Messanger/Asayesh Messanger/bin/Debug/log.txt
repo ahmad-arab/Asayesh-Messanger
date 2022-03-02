@@ -1,0 +1,21 @@
+Application Starting [App.xaml.cs > OnStartup() > Line 22]
+
+Application Starting... [App.xaml.cs > OnStartup() > Line 22]
+
+[2022-03-02 11-17-08 AM] Application Starting... [App.xaml.cs > OnStartup() > Line 22]
+
+[2022-03-02 01-31-04 PM] Application Starting... [App.xaml.cs > OnStartup() > Line 22]
+
+[2022-03-02 01-31-10 PM] An unexpected error occured running IoC.Task.Run. Value cannot be null.
+Parameter name: oooops [TaskManager.cs > Run() > Line 23]
+
+[2022-03-02 01-32-27 PM] Application Starting... [App.xaml.cs > OnStartup() > Line 22]
+
+[2022-03-02 01-32-33 PM] An unexpected error occured running IoC.Task.Run. Value cannot be null.
+Parameter name: oooops [App.xaml.cs > OnStartup() > Line 24]
+
+[2022-03-02 01-32-40 PM] Application Starting... [App.xaml.cs > OnStartup() > Line 22]
+
+[2022-03-02 01-32-44 PM] An unexpected error occured running IoC.Task.Run. Value cannot be null.
+Parameter name: oooops [App.xaml.cs > OnStartup() > Line 24]
+

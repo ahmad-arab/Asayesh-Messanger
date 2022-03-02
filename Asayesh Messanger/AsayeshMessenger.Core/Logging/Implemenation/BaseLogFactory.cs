@@ -50,9 +50,13 @@ namespace AsayeshMessenger.Core
 
         #region Constructor
 
-        public BaseLogFactory()
+        public BaseLogFactory(ILogger[] loggers = null)
         {
-            AddLogger(new ConsoleLogger());
+            AddLogger(new DebugLogger());
+
+            if (loggers != null)
+                foreach (ILogger logger in loggers)
+                    AddLogger(logger);
         }
 
         #endregion
@@ -104,7 +108,7 @@ namespace AsayeshMessenger.Core
                 return;
 
             if (IncludeLogOriginDetails)
-                message = $"[{Path.GetFileName(filePath)} > {origin}() > Line {lineNumber}]{Environment.NewLine}{message}";
+                message = $"{message} [{Path.GetFileName(filePath)} > {origin}() > Line {lineNumber}]{Environment.NewLine}";
 
             mLoggers.ForEach(logger => logger.Log(message, level));
 

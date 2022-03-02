@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AsayeshMessenger.Core;
+using System;
 
 using System.Threading.Tasks;
 using System.Windows;
@@ -201,7 +202,7 @@ namespace AsayeshMessenger
             element.Unloaded += (s, e) => unloaded = true;
 
             // Run a loop off the caller thread
-            Task.Run(async () =>
+            IoC.Task.Run(async () =>
             {
                 // While the element is still available, recheck the size
                 // after every loop in case the container was resized
