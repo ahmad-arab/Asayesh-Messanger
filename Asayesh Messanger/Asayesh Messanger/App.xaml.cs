@@ -23,7 +23,7 @@ namespace AsayeshMessenger
 
             IoC.Task.Run(() =>
             {
-                throw new ArgumentNullException("oooops");
+                //throw new ArgumentNullException("oooops");
             });
 
             Current.MainWindow = new MainWindow();
